@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(186, 240, 5, 0.8); /* Semi-transparent greenish background */
+    display: flex; /* Center the modal */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff; /* White background for the modal box */
+    border: 2px solid green; /* Green border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    width: 60%; /* Responsive width */
+    max-width: 500px; /* Max width for larger screens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for focus effect */
+    overflow: hidden; /* Ensure content stays inside the modal */
+  }
+  
+  .close-modal-icon {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: red; /* Red background for the close button */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .header {
+    padding: 15px;
+    background-color: #5cb85c; /* Green header background */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .body {
+    padding: 20px; /* White space inside the body */
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff; /* Ensure the body has a clear white background */
+    min-height: 150px; /* Add a minimum height for consistent spacing */
+  }
+  
+  .footer {
+    padding: 15px;
+    background-color: #5cb85c; /* Green footer background */
+    color: white;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+  
